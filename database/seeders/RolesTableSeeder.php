@@ -20,15 +20,15 @@ class RolesTableSeeder extends Seeder
             'description' => 'responsibel for all users'
         ]);
         $hospital = Role::create([
-            'name' => 'hospital',
-            'display_name' => 'hospital',
-            'description' => 'can add hospital post'
+            'name' => 'marchent',
+            'display_name' => 'marchent',
+            'description' => 'can add marchent post'
         ]);
-        $doctor = Role::create([
-            'name' => 'doctor',
-            'display_name' => 'doctor',
-            'description' => ' can add doctor post'
-        ]);
+//        $doctor = Role::create([
+//            'name' => 'doctor',
+//            'display_name' => 'doctor',
+//            'description' => ' can add doctor post'
+//        ]);
         $client = Role::create([
             'name' => 'client',
             'display_name' => 'client',

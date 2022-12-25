@@ -21,18 +21,18 @@ class UsersTableSeeder extends Seeder
       ]);
       $user->attachRole('super_admin');
         $hospital = User::create([
-            'name' => 'hospital',
-            'email' => 'hospital@gmail.com',
+            'name' => 'marchent',
+            'email' => 'marchent@gmail.com',
             'password' => bcrypt('yy12345yy')
         ]);
-        $hospital->attachRole('hospital');
+        $hospital->attachRole('marchent');
 
-        $doctor = User::create([
-            'name' => 'hospital',
-            'email' => 'doctor@gmail.com',
-            'password' => bcrypt('yy12345yy')
-        ]);
-        $doctor->attachRole('doctor');
+//        $doctor = User::create([
+//            'name' => 'marchent',
+//            'email' => 'marchent@gmail.com',
+//            'password' => bcrypt('yy12345yy')
+//        ]);
+//        $doctor->attachRole('doctor');
 
         $client = User::create([
             'name' => 'client',
