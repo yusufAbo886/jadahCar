@@ -435,7 +435,7 @@
 
     												<span class="menu-link">
 
-    													<span class="menu-text">Anasayfa</span>
+    													<span class="menu-text">Home</span>
 
     												</span>
 
@@ -445,9 +445,9 @@
 
 
 
-                                    <li id="blog"  class="menu-item" aria-haspopup="true">
+                                    <li id="slider"  class="menu-item" aria-haspopup="true">
 
-                                        <a href="{{asset('admin/blog')}}" class="menu-link">
+                                        <a href="{{asset('admin/slider')}}" class="menu-link">
 
                                             <i class="menu-bullet menu-bullet-dot">
 
@@ -455,7 +455,7 @@
 
                                             </i>
 
-                                            <span class="menu-text">Blog</span>
+                                            <span class="menu-text">Slider</span>
 
                                         </a>
 
