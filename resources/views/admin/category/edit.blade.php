@@ -27,14 +27,14 @@
                            required/>
                     <span class="form-text text-muted">Please enter your full title turkish</span>
                 </div>
-                <div class="col-sm form-group">
-                    <label>name TR:</label>
-                    <input class="form-control form-control-solid" id="theNameTr" name="theNameTr"
-                           placeholder="Enter name TR"
-                           value="{{$category->theNameTr}}"
-                           required/>
-                    <span class="form-text text-muted">Please enter your full title english</span>
-                </div>
+{{--                <div class="col-sm form-group">--}}
+{{--                    <label>name TR:</label>--}}
+{{--                    <input class="form-control form-control-solid" id="theNameTr" name="theNameTr"--}}
+{{--                           placeholder="Enter name TR"--}}
+{{--                           value="{{$category->theNameTr}}"--}}
+{{--                           required/>--}}
+{{--                    <span class="form-text text-muted">Please enter your full title english</span>--}}
+{{--                </div>--}}
                 </div>
 
 

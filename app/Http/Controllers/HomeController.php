@@ -143,29 +143,29 @@ class HomeController extends Controller
 //
 //    }
 
-public function category($request){
-    $changeLanguge = Languge::post();
-        $post = HospitalPost::
-           join('post_actives',function ($join){
-                 $join->on('post_id','=','hospital_posts.id');
-                 $join->where('table_name','=',"hospitalPost");
-             })->
-            select(['hospital_posts.id','hospital_posts.created_at',
-                 'hospital_posts.'.$changeLanguge['theTitle'],
-                 'hospital_posts.theLocation','hospital_posts.thePhone',
-                 'hospital_posts.theWebsite','hospital_posts.theEmail',
-                 'hospital_posts.facebook','hospital_posts.instegram',
-                 'hospital_posts.twiter','hospital_posts.map',
-                 'hospital_posts.thePhoto','hospital_posts.instegram',
-                 'post_actives.isActive','hospital_posts.'.$changeLanguge['theText'],
-             ])->addSelect(['url' => Links::select('url')
-                ->whereColumn('content_id', 'hospital_posts.id',)
-                ->where('page', 'hospitalPost')
-            ]) ->where('category_id','=',$request)
-            ->where('isActive','=',1)->latest('created_at')->get();
-        $category = Category::all();
-    return view('category',compact('post','category'));
-}
+//public function category($request){
+//    $changeLanguge = Languge::post();
+//        $post = HospitalPost::
+//           join('post_actives',function ($join){
+//                 $join->on('post_id','=','hospital_posts.id');
+//                 $join->where('table_name','=',"hospitalPost");
+//             })->
+//            select(['hospital_posts.id','hospital_posts.created_at',
+//                 'hospital_posts.'.$changeLanguge['theTitle'],
+//                 'hospital_posts.theLocation','hospital_posts.thePhone',
+//                 'hospital_posts.theWebsite','hospital_posts.theEmail',
+//                 'hospital_posts.facebook','hospital_posts.instegram',
+//                 'hospital_posts.twiter','hospital_posts.map',
+//                 'hospital_posts.thePhoto','hospital_posts.instegram',
+//                 'post_actives.isActive','hospital_posts.'.$changeLanguge['theText'],
+//             ])->addSelect(['url' => Links::select('url')
+//                ->whereColumn('content_id', 'hospital_posts.id',)
+//                ->where('page', 'hospitalPost')
+//            ]) ->where('category_id','=',$request)
+//            ->where('isActive','=',1)->latest('created_at')->get();
+//        $category = Category::all();
+//    return view('category',compact('post','category'));
+//}
 public function doctors(){
     $changeLanguge = Languge::post();
     $doctor = DoctorPost:: join('post_actives',function ($join){

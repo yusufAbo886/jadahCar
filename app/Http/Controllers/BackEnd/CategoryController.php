@@ -40,17 +40,18 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \App\Http\Requests\CategoryRequest $request
-     * @return Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
 //       public function store()
-    public function store(CategoryRequest $request)
-
+    public function store(Request $request)
     {
-        $validated = $request->validated();
+        $validated = $request->validate([
+            'theNameEn' => 'required',
+        ]);
         $category = new Category;
         $category->theNameEn = $request->theNameEn;
-        $category->theNameTr = $request->theNameTr;
+//        $category->theNameTr = $request->theNameTr;
         $category->save();
         $url = permalink($request->theNameEn);
         $page = "category";
@@ -87,16 +88,18 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Category $category
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(CategoryRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        $validated = $request->validated();
+        $validated = $request->validate([
+            'theNameEn' => 'required',
+        ]);
         $category = Category::find($id);
         $category->theNameEn = $request->input('theNameEn');
-        $category->theNameTr = $request->input('theNameTr');
+//        $category->theNameTr = $request->input('theNameTr');
         $category->update();
         $url = permalink($request->theNameEn);
         $page = "category";

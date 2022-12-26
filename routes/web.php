@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:super_admin']]
     Route::get('/', [App\Http\Controllers\BackEnd\DashbordController::class, 'index'])->name('dashbord');
     Route::post('/dashbord', [App\Http\Controllers\BackEnd\DashbordController::class, 'store'])->name('dashbord.store');
     Route::post('/dashbords/{id}', [App\Http\Controllers\BackEnd\DashbordController::class, 'destroy'])->name('dashbord.destroy');
-//    Route::resource('category', App\Http\Controllers\BackEnd\CategoryController::class);
+    Route::resource('category', App\Http\Controllers\BackEnd\CategoryController::class);
 //    Route::resource('subcategory', App\Http\Controllers\BackEnd\SubcategoryController::class);
     Route::resource('slider', App\Http\Controllers\BackEnd\SliderController::class);
 //    Route::resource('clinic', App\Http\Controllers\BackEnd\ClinicController::class);

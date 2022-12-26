@@ -34,7 +34,6 @@
                 <thead class="cf">
                 <tr>
                     <th>name En </th>
-                    <th>name Tr</th>
                     <th>Action</th>
 
 
@@ -46,7 +45,6 @@
                     <tr>
 
                         <td>{{$item->theNameEn}}</td>
-                        <td>{{$item->theNameTr}}</td>
 
                         <td>
                             <div class='d-inline mr-4'><a class='btn btn-light-primary font-weight-bold' href='{{route('category.edit',$item->id)}}'><i class='flaticon2-pen text-info'></i></a></div>

@@ -30,17 +30,17 @@
                         <p class="text-danger">{{ $errors->first('theNameEn') }}</p>
                     @endif
                 </div>
-                    <div class="col-sm form-group">
-                    <label>name TR:</label>
-                    <input class="form-control form-control-solid" id="theNameTr" name="theNameTr"
-                           placeholder="Enter name TR"
+{{--                    <div class="col-sm form-group">--}}
+{{--                    <label>name TR:</label>--}}
+{{--                    <input class="form-control form-control-solid" id="theNameTr" name="theNameTr"--}}
+{{--                           placeholder="Enter name TR"--}}
 
-                           required/>
-                    <span class="form-text text-muted">Please enter your full title english</span>
-                    @if ($errors->has('theNameTr'))
-                        <p class="text-danger">{{ $errors->first('theNameTr') }}</p>
-                    @endif
-                </div>
+{{--                           required/>--}}
+{{--                    <span class="form-text text-muted">Please enter your full title english</span>--}}
+{{--                    @if ($errors->has('theNameTr'))--}}
+{{--                        <p class="text-danger">{{ $errors->first('theNameTr') }}</p>--}}
+{{--                    @endif--}}
+{{--                </div>--}}
                 </div>
 
             </div>

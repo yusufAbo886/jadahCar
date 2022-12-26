@@ -40,13 +40,14 @@ class SliderController extends Controller
     {
         $validated = $request->validate([
 //            'title' => 'required|unique:posts|max:255',
-            'thePhoto' => 'required',
+            'file' => 'required',
         ]);
         $slider = new Slider;
         $slider->theTitle = $request->theTitle;
         $slider->thePhoto = $request->file;
-        $slider->save();
-        return redirect()->route('slider.index');
+//        return $request->file;
+       $slider->save();
+       return redirect()->route('slider.index');
 
     }
 
@@ -85,11 +86,12 @@ class SliderController extends Controller
     {
         $validated = $request->validate([
 //            'title' => 'required|unique:posts|max:255',
-            'thePhoto' => 'required',
+            'file' => 'required',
         ]);
         $slider= Slider::find($id);
-        $slider->theText  = $request->input('theText');
+        $slider->theTitle  = $request->input('theTitle');
         $slider->thePhoto = $request->input('file');
+        $slider->update();
         return redirect()->route('slider.index');
 
     }
