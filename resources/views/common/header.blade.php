@@ -34,11 +34,19 @@
             <div class="row">
                 <div class="col">logo</div>
                 <div class="col log">
-                    <p>  <a href="/buyer-login" class="login">
-                            <img height="20px" width="20px" src="{{ asset('asset/img/user.png') }}" alt=""> تسجيل الدخول</a>
+                    @if(Auth::check())
+                    <p>  <a href="{{ route('logout') }}" class="login">
+                            <img height="20px" width="20px" src="{{ asset('asset/img/user.png') }}" alt="">
+                               تسجيل الخروج
+                        </a>
                     </p>
-
-
+                    @else
+                        <p>  <a href="/buyer-login" class="login">
+                                <img height="20px" width="20px" src="{{ asset('asset/img/user.png') }}" alt="">
+                                تسجيل الدخول
+                            </a>
+                        </p>
+                    @endif
                 </div>
             </div>
         </div>

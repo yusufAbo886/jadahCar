@@ -35,7 +35,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:super_admin']]
 //    Route::resource('languge', App\Http\Controllers\BackEnd\LangugeController::class);
 
 });
-Route::group(['prefix' => 'admin-hospital', 'middleware' => ['auth', 'role:hospital']], function () {
+Route::group(['prefix' => 'merchant', 'middleware' => ['auth', 'role:merchant']], function () {
     Route::get('/', [App\Http\Controllers\Hospital\DashbordController::class, 'index'])->name('dashbord');
     Route::resource('hospital-post', App\Http\Controllers\Hospital\HospitalPostController::class);
     Route::resource('hospital-post-photos', 'App\Http\Controllers\Hospital\HospitalPostSliderController', ['except' => 'create'] );

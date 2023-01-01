@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Helpers\Languge;
 use App\Helpers\Post;
+use App\Helpers\Register;
 use App\Models\Blog;
 use App\Models\Category;
 use App\Models\DoctorPost;
@@ -193,14 +194,36 @@ public function doctors(){
 
         $email = $request->get('email');
         $password = $request->get('password');
-        return $email;
+        $cls = Register::login($email,$password);
+
+        return $cls;
     }
+
+     public function regist(){
+        return view('register');
+     }
     public function contact(){
 
         return view('contact');
     }
 
+    public function regist_info($request){
 
+        $validated = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'customerType' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+           'password' => ['required', 'string', 'min:8'],
+        ]);
+
+        $email = $request->get('email');
+        $password = $request->get('password');
+        $customerType = $request->get('customerType');
+        $name = $request->get('name');
+
+       $cls = Register::register($name,$email,$customerType,$password);
+        return $cls;
+    }
 
 
 

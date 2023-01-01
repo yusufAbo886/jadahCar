@@ -24,7 +24,7 @@ class Role
 
 
         if (Auth::check()){
-            if ($user->role =="member"){
+            if ($user->role =="clint"){
 
                 return redirect('/');
 
