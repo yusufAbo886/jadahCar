@@ -1,169 +1,94 @@
 
 
+{{--<footer>--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
 
-<!-- START FOOTER -->
-<footer class="first-footer">
-    <div class="top-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="netabout">
-                        <a href="index.html" class="logo">
-                            <img src="images/logo-footer.svg" alt="netcom">
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus impedit perferendis, laudantium molestiae ipsam rem veniam facere quos! Temporibus, minima culpa deleniti magnam.</p>
-                        <a href="about.html" class="btn btn-secondary">Read More...</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="navigation">
-                        <h3>Navigation</h3>
-                        <div class="nav-footer">
-                            <ul>
-                                <li><a href="index.html">Home One</a></li>
-                                <li><a href="properties-right-sidebar.html">Properties Right</a></li>
-                                <li><a href="properties-full-list.html">Properties List</a></li>
-                                <li><a href="properties-details.html">Property Details</a></li>
-                                <li class="no-mgb"><a href="agents-listing-grid.html">Agents Listing</a></li>
-                            </ul>
-                            <ul class="nav-right">
-                                <li><a href="agent-details.html">Agents Details</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="blog.html">Blog Default</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                                <li class="no-mgb"><a href="contact-us.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="widget">
-                        <h3>Twitter Feeds</h3>
-                        <div class="twitter-widget contuct">
-                            <div class="twitter-area">
-                                <div class="single-item">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h5><a href="#">@findhouses</a> all share them with me baby said inspet.</h5>
-                                        <h4>about 5 days ago</h4>
-                                    </div>
-                                </div>
-                                <div class="single-item">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h5><a href="#">@findhouses</a> all share them with me baby said inspet.</h5>
-                                        <h4>about 5 days ago</h4>
-                                    </div>
-                                </div>
-                                <div class="single-item">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h5><a href="#">@findhouses</a> all share them with me baby said inspet.</h5>
-                                        <h4>about 5 days ago</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="contactus">
-                        <h3>Contact Us</h3>
-                        <ul>
-                            <li>
-                                <div class="info">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <p class="in-p">95 South Park Ave, USA</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="info">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <p class="in-p">+456 875 369 208</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="info">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <p class="in-p ti">support@findhouses.com</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="netsocials">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="second-footer">
-        <div class="container">
-            <p>2018 © Copyright - All Rights Reserved.</p>
-            <p>Made With <i class="fa fa-heart" aria-hidden="true"></i> By Code-Theme</p>
-        </div>
-    </div>
-</footer>
+{{--            <div class="col-sm">--}}
+{{--                <a href="#">WHO WE ARE</a>--}}
+{{--                <a href="#"> WHAT WE DO</a>--}}
+{{--                <a href="#">SCHOOLS</a>--}}
 
-<a data-scroll href="#heading" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
-<!-- END FOOTER -->
-
-<!-- START PRELOADER -->
-
-<div id="preloader">
-    <div id="status">
-        <div class="status-mes"></div>
-    </div>
-</div>
-<script src="{{ asset('asset/js/jquery.min.js') }}"></script>
-<script src="{{ asset('asset/js/jquery-ui.js') }}"></script>
-<script src="{{ asset('asset/js/tether.min.js') }}"></script>
-<script src="{{ asset('asset/js/moment.js') }}"></script>
-<script src="{{ asset('asset/js/transition.min.js') }}"></script>
-<script src="{{ asset('asset/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('asset/js/fitvids.js')}}"></script>
-<script src="{{ asset('asset/js/jquery.waypoints.min.js')}}"></script>
-<script src="{{ asset('asset/js/jquery.counterup.min.js')}}"></script>
-<script src="{{ asset('asset/js/imagesloaded.pkgd.min.js')}}"></script>
-<script src="{{ asset('asset/js/isotope.pkgd.min.js')}}"></script>
-<script src="{{ asset('asset/js/smooth-scroll.min.js')}}"></script>
-<script src="{{ asset('asset/js/lightcase.js')}}"></script>
-<script src="{{ asset('asset/js/owl.carousel.js')}}"></script>
-<script src="{{ asset('asset/js/jquery.magnific-popup.min.js')}}"></script>
-<script src="{{ asset('asset/js/ajaxchimp.min.js')}}"></script>
-<script src="{{ asset('asset/js/newsletter.js')}}"></script>
-<script src="{{ asset('asset/js/jquery.form.js')}}"></script>
-<script src="{{ asset('asset/js/jquery.validate.min.js')}}"></script>
-<script src="{{ asset('asset/js/forms-2.js')}}"></script>
+{{--            </div>--}}
+{{--            <div class="col-sm">--}}
+{{--                <a href="#">LANGUAGE SCHOOL  </a>--}}
+{{--                <a href="#"> TEACHER SQUAD</a>--}}
+{{--                <a href="#">CONTACT</a>--}}
+{{--            </div>--}}
+{{--            <div class="col-sm ">--}}
+{{--                <a href="#">151 Adelaide Terrace, East Perth 6004</a>--}}
+{{--                <a href="#"> T P (08) 6115 0025</a>--}}
+{{--            </div>--}}
+{{--            <div class="col-sm text-right">--}}
+{{--                FOLLOW US--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 
 
-{{--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqb3fT3SbMSDMggMEK7fJOIkvamccLrjA"></script>--}}
+{{--</footer>--}}
+
+<!-- slider -->
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+-->
+<script src="http://code.jquery.com/jquery-1.7rc2.js"></script>
+
+{{--<script src="main.js"></script>--}}
+<script src="{{ asset('asset/main.js') }}"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script>
+    // #testimonial-slider
+    // .testimonial
+    $(document).ready(function(){
 
 
-<script src="{{ asset('asset/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.actions.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.carousel.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.migration.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
 
-<script src="{{ asset('asset/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
 
-<script src="{{ asset('asset/js/script.js') }}"></script>
+
+
+
+
+        $("#testimonial-slider").owlCarousel({
+            items: 2.2,
+            itemsDesktop:[1199,2],
+            itemsDesktopSmall:[1000,2],
+            itemsTablet:[767,1],
+            pagination: false,
+            navigation:true,
+            afterAction: function(elem){ $(elem). addClass("active");},   afterAction: function(elem){ $(elem). addClass("active");},
+            navigationText:["<img src='left.png' height='20px 'width='20px' >","<img src='arrow.png' height='20px 'width='20px' >"],
+            autoPlay:true,
+
+
+            afterAction: function(el){
+                //remove class active
+                $(" .description")
+                    .removeClass('active')
+
+                //add class active
+                $(" .description")
+                    .eq(this.currentItem )
+                    .addClass('active')
+            }
+
+        });
+    });
+</script>
+
 
 
 

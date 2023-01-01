@@ -31,14 +31,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $changeLanguge = Languge::category();
 
-//        $categories = Category::all();
-        $categories = Category::select('categories.*',$changeLanguge['theName'])->addSelect(['url' => Links::select('url')
-            ->whereColumn('content_id', 'categories.id',)
-            ->where('page', 'category')
-        ])->latest('created_at')->get();
-      view()->share(['categories'=> $categories]);
     }
 
     /**
@@ -193,17 +186,15 @@ public function doctors(){
 
 
 
-public function blog(){
-    $changeLanguge = Languge::post();
-    $blog = Blog::
-    select(['blogs.*','blogs.'.$changeLanguge['theTitle'],'blogs.'.$changeLanguge['theText'],
+ public function buyer_login(){
+        return view('login');
+ }
+    public function buyer_info($request){
 
-    ])->addSelect(['url' => Links::select('url')
-        ->whereColumn('content_id', 'blogs.id')
-        ->where('page', 'blog')
-    ])->get();
-    return view('blog',compact('blog'));
-}
+        $email = $request->get('email');
+        $password = $request->get('password');
+        return $email;
+    }
     public function contact(){
 
         return view('contact');
