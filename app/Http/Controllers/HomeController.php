@@ -100,7 +100,7 @@ class HomeController extends Controller
 //            return $category;
 
 
-          return view('index',compact('hospital','blog','category'));
+         return view('index',compact('hospital','blog','category'));
         }
     }
 

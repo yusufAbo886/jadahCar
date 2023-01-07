@@ -30,7 +30,7 @@ class HospitalPostSliderController extends Controller
     public function create($id)
     {
         $param = $id;
-        return view("admin-merchant.merchant-post-photo.create", compact('param'));
+        return view("admin-merchant.hospital-post-photo.create", compact('param'));
 
     }
 
@@ -48,7 +48,7 @@ class HospitalPostSliderController extends Controller
             'thePhoto' => Session::get('image'),
         ]);
         Session::forget('image');
-        return redirect("admin-merchant/merchant-post-photos/$postId");
+        return redirect("merchant/merchant-post-photos/$postId");
 
     }
 
@@ -62,7 +62,7 @@ class HospitalPostSliderController extends Controller
     {
         $photo = HospitalPostPhoto::where('post_id',$id)->get();
         $param = $id;
-        return view("admin-merchant.merchant-post-photo.index", compact('photo','param'));
+        return view("admin-merchant.hospital-post-photo.index", compact('photo','param'));
 
 
     }
