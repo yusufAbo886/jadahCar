@@ -36,10 +36,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:super_admin']]
 
 });
 Route::group(['prefix' => 'merchant', 'middleware' => ['auth', 'role:merchant']], function () {
-    Route::get('/', [App\Http\Controllers\Hospital\DashbordController::class, 'index'])->name('dashbord');
-    Route::resource('hospital-post', App\Http\Controllers\Hospital\HospitalPostController::class);
-    Route::resource('hospital-post-photos', 'App\Http\Controllers\Hospital\HospitalPostSliderController', ['except' => 'create'] );
-    Route::get('hospital-post-photos/create/{id}', ['as' => 'hospital-post-photos','uses' => 'App\Http\Controllers\Hospital\HospitalPostSliderController@create']);
+    Route::get('/', [App\Http\Controllers\Merchant\DashbordController::class, 'index'])->name('dashbord');
+    Route::resource('merchant-post', App\Http\Controllers\Merchant\CarController::class);
+    Route::resource('merchant-post-photos', 'App\Http\Controllers\Hospital\HospitalPostSliderController', ['except' => 'create'] );
+    Route::get('merchant-post-photos/create/{id}', ['as' => 'merchant-post-photos','uses' => 'App\Http\Controllers\Hospital\HospitalPostSliderController@create']);
 
 });
 Route::group(['prefix' => 'admin-doctor', 'middleware' => ['auth', 'role:doctor']], function () {

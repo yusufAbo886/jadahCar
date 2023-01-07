@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Hospital;
+namespace App\Http\Controllers\Merchant;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ class DashbordController extends Controller
      */
     public function index()
     {
-        return view("admin-hospital.dashbord.index");
+        return view("admin-merchant.dashbord.index");
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Hospital;
+namespace App\Http\Controllers\Merchant;
 
 use App\Helpers\InsertLinks;
 
@@ -39,9 +39,9 @@ class HospitalPostController extends Controller
                         ->whereColumn('post_id', 'hospital_posts.id')
             ])->get();
 
-        return view("admin-hospital.hospital-post.index", compact('hospital'));
+        return view("admin-merchant.merchant-post.index", compact('hospital'));
 
-//        return view("admin-hospital.hospital-post.photo");
+//        return view("admin-merchant.merchant-post.photo");
 
     }
 
@@ -55,7 +55,7 @@ class HospitalPostController extends Controller
 
         $hospital = HospitalPost::all();
         $category = Category::all();
-        return view("admin-hospital.hospital-post.create", compact('hospital', 'category'));
+        return view("admin-merchant.merchant-post.create", compact('hospital', 'category'));
     }
 
     /**
@@ -93,7 +93,7 @@ class HospitalPostController extends Controller
         $isActive = 0;
         $post = Post::post($id, $userId, $page, $isActive);
         $link = InsertLinks::link($id, $url, $page);
-        return redirect()->route('hospital-post.index');
+        return redirect()->route('merchant-post.index');
     }
 
     /**
@@ -125,7 +125,7 @@ class HospitalPostController extends Controller
         ])->where('id', $id)->first();
         $category = Category::all();
         $subcategory = Subcategory::where('category_id','=',$hospital->category_id)->get();
-        return view('admin-hospital.hospital-post.edit', compact('hospital', 'category', 'subcategory'));
+        return view('admin-merchant.merchant-post.edit', compact('hospital', 'category', 'subcategory'));
 
 
     }
@@ -169,7 +169,7 @@ class HospitalPostController extends Controller
         $url = permalink($request->input('url'));
         $page = "hospitalPost";
         InsertLinks::update($id, $url, $page);
-        return redirect()->route('hospital-post.index');
+        return redirect()->route('merchant-post.index');
 
     }
 
